@@ -48,12 +48,12 @@ export const InfiniteMovingLogos = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards"
+          "forwards",
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse"
+          "reverse",
         );
       }
     }
@@ -74,24 +74,24 @@ export const InfiniteMovingLogos = ({
       ref={containerRef}
       className={cn(
         "scroller relative z-20  w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
-        className
+        className,
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
           start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item, idx) => (
           <li
             className="
         
-              flex items-center
+              shrink-00 flex
               
-              flex-shrink-00 px-8 "
+              items-center px-8 "
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",

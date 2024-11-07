@@ -14,7 +14,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "z-10 flex size-12 items-center justify-center rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "border-border z-10 flex size-12 items-center justify-center rounded-full border-2  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className,
       )}
     >
@@ -42,12 +42,12 @@ export function AnimatedBeamMultipleOutputDemo({
   return (
     <div
       className={cn(
-        "relative flex xl:h-[500px] w-full items-center justify-center overflow-hidden  p-10 ",
+        "relative flex w-full items-center justify-center overflow-hidden p-10  xl:h-[500px] ",
         className,
       )}
       ref={containerRef}
     >
-      <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
+      <div className="flex size-full max-w-lg flex-row items-stretch justify-between gap-10">
         <div className="flex flex-col justify-center gap-2">
           <Circle ref={div1Ref}>
             <Icons.googleDrive />
@@ -56,11 +56,11 @@ export function AnimatedBeamMultipleOutputDemo({
             <Icons.googleDocs />
           </Circle>
           <Circle ref={div3Ref}>
-          <Image
+            <Image
               src={"/logo/figma.png"}
               width={10000}
               height={10000}
-              className="w-6 h-6"
+              className="size-6"
               alt="image"
             />
           </Circle>
@@ -73,12 +73,12 @@ export function AnimatedBeamMultipleOutputDemo({
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-white">
-          <Image
-          src={'/logo/logo.webp'}
-          height={1000}
-          width={1000}
-          alt="logo"
-          />
+            <Image
+              src={"/logo/logo.webp"}
+              height={1000}
+              width={1000}
+              alt="logo"
+            />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">

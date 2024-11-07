@@ -7,7 +7,7 @@ import { works } from "@/lib/constants";
 export function BlurFadeDemo() {
   return (
     <section id="photos">
-      <div className="grid md:grid-cols-2 gap-8 mt-10 justify-items-center">
+      <div className="mt-10 grid justify-items-center gap-8 md:grid-cols-2">
         {works.map(({ imageUrl, title, link }, idx) => (
           <BlurFade
             key={title}
@@ -20,11 +20,11 @@ export function BlurFadeDemo() {
                 height={10000}
                 width={10000}
                 className="
-                h-5/6 w-full object-cover rounded-lg"
+                h-5/6 w-full rounded-lg object-cover"
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
               />
-              <h3 className="text-lg font-semibold p-4">{title}</h3>
+              <h3 className="p-4 text-lg font-semibold">{title}</h3>
             </Link>
           </BlurFade>
         ))}

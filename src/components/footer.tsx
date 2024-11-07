@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
-      <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
-        <h1 className="text-3xl md:text-5xl font-medium ">
+    <footer className="border-t bg-[#fafafa]  px-6 py-10 md:mx-auto md:px-0">
+      <div className="mx-auto flex  flex-col justify-between gap-y-3 xl:w-4/5 2xl:w-[68%]">
+        <h1 className="text-3xl font-medium md:text-5xl ">
           <Image
             src={"/logo/logo.webp"}
             width={10000}
@@ -20,10 +20,10 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex md:justify-center gap-x-4 mt-10">
+      <div className="mt-10 flex gap-x-4 md:justify-center">
         © 2024 Bird. All Rights Reserved.
         <Link href="/" className="text-blue-500">
-          Privacy Policy  
+          Privacy Policy
         </Link>
       </div>
     </footer>

@@ -5,7 +5,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 
 const BoxRevealDemo = () => {
   return (
-    <div className="h-full w-full items-center justify-center ml-10 overflow-hidden pt-8 space-y-2">
+    <div className="ml-10 size-full items-center justify-center space-y-2 overflow-hidden pt-8">
       <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
         <p className="text-3xl font-semibold">1. Connect</p>
       </BoxReveal>
