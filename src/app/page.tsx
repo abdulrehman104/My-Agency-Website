@@ -1,16 +1,16 @@
 "use client";
 
-import { Link as ScrollLink, Element } from "react-scroll";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { Link as ScrollLink, Element } from "react-scroll";
+import { PiCheckBold } from "react-icons/pi";
+import { Star } from "lucide-react";
 
 import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text";
 import { CoverDemo } from "@/components/demos/cover-demo";
-import { PiCheckBold } from "react-icons/pi";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
-import { services } from "@/lib/constants";
 import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
@@ -18,10 +18,15 @@ import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/magicui/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
 import Footer from "@/components/footer";
+import { services } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <div className="inset-0 -z-10 size-full text-clip bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div
+      className="inset-0 -z-10 size-full text-clip bg-[#fafafa] 
+      bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
+      [background-size:14px_24px]"
+    >
       <Element
         name="top"
         className="sticky top-5 z-50 mx-6 flex items-center justify-between overflow-hidden rounded-[6px] bg-white px-4 py-6 md:mx-auto md:px-8 xl:w-4/5 2xl:w-[68%]"
@@ -278,11 +283,11 @@ export default function Home() {
               results. &quot;
             </h1>
             <div className="flex items-center gap-x-1">
-              {/* <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" /> */}
+              <Star className="text-4xl text-yellow-500" />
+              <Star className="text-4xl text-yellow-500" />
+              <Star className="text-4xl text-yellow-500" />
+              <Star className="text-4xl text-yellow-500" />
+              <Star className="text-4xl text-yellow-500" />
             </div>
 
             <span className="text-xl font-medium">

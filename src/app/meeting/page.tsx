@@ -13,7 +13,11 @@ const checkItemVariants = {
 
 export default function MeetingPage() {
   return (
-    <div className="inset-0 -z-10 flex w-full flex-col text-clip bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div
+      className="inset-0 -z-10 flex w-full flex-col text-clip bg-[#fafafa] 
+      [background-image:linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
+      [background-size:14px_24px]"
+    >
       <ShowcaseNavbar />
 
       <div className="mx-auto justify-between px-6 md:mt-14 md:flex md:px-0 xl:w-4/5 2xl:w-[68%]  ">

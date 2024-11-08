@@ -6,7 +6,11 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 
 export default function ShowcasePage() {
   return (
-    <div className="inset-0 -z-10 size-full text-clip bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div
+    className="inset-0 -z-10 size-full text-clip bg-[#fafafa] 
+    bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] 
+    [background-size:14px_24px]"
+    >
       <ShowcaseNavbar />
 
       <section className="mx-6 md:mx-auto md:px-0 xl:w-4/5 2xl:w-[68%]">
